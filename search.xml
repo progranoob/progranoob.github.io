@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>hexo theme</title>
+      <link href="/2021/07/02/hexo-theme/"/>
+      <url>/2021/07/02/hexo-theme/</url>
+      
+        <content type="html"><![CDATA[<p>Hello! </p><p>This blog is to continue personal website establishment on the basis of what has been implemented in “establishment tutorial”. </p><p>Here, I am going to introduce you how to use a hexo theme to make your website charming.</p><h1 id="Select-Your-Favorite-Theme"><a href="#Select-Your-Favorite-Theme" class="headerlink" title="Select Your Favorite Theme"></a>Select Your Favorite Theme</h1><h2 id="Themes"><a href="#Themes" class="headerlink" title="Themes,"></a>Themes,</h2><p>You can go to the following link to select a theme from official website.</p><p><a href="https://hexo.io/themes/">https://hexo.io/themes/</a></p><p>Then, access to the author’s Github project.</p><p><img src="/turtorial/ghub.png"></p><h2 id="Git-Clone"><a href="#Git-Clone" class="headerlink" title="Git Clone,"></a>Git Clone,</h2><p>Git clone into your <strong>themes</strong> file under root repository</p><p><img src="/turtorial/clone.png"></p><h1 id="Localization"><a href="#Localization" class="headerlink" title="Localization"></a>Localization</h1><h2 id="Path"><a href="#Path" class="headerlink" title="Path,"></a>Path,</h2><p>Back to _config.yml under your blog (not inside themes),</p><p>replace the theme name by what you have downloaded.</p><p><img src="/turtorial/theme.png"></p><h2 id="Regeneration"><a href="#Regeneration" class="headerlink" title="Regeneration,"></a>Regeneration,</h2><p><strong>hexo clean,</strong></p><p><strong>hexo g,</strong></p><p><strong>hexo s,</strong></p><p>Now, go to <strong>localhost</strong> and see the changes.</p><p>The format of your website should be same as the one you selected.</p><h1 id="Personalization"><a href="#Personalization" class="headerlink" title="Personalization"></a>Personalization</h1><p>If you choose to use a official theme, the author’s project usually offers <strong>README.md</strong> to guide you how to recognize and modify its configuration. Please read it carefully and try it as much as possible.</p><h2 id="Music"><a href="#Music" class="headerlink" title="Music,"></a>Music,</h2><p>You may have noticed there are two tests are created as individual blogs in Progranoob Web. They are in-text insertion realization. </p><p>If you want to add it into your page, type in the command below into your theme _config.yml</p><p><img src="/turtorial/music.png"></p><p>If you want to insert a in-text music, please copy and paste iframe link like below.</p><p><img src="/turtorial/netease.png"></p><h2 id="live2d"><a href="#live2d" class="headerlink" title="live2d,"></a>live2d,</h2><p><strong>npm install –save hexo-helper-live2d</strong></p><p><img src="/turtorial/module.png"></p><p>When finished, check whether node_modules is under your blog file.</p><p>Then, type in configurations inside the _config.yml,</p><p><img src="/turtorial/live.png"></p><p>It doesn’t matter where you place it as long as you don’t insert it between dependent lines.</p><h1 id="Deploy"><a href="#Deploy" class="headerlink" title="Deploy"></a>Deploy</h1><p>Remember to deploy it into your io by <strong>hexo d</strong></p><p>Wait for a few seconds and hope a brand-new blog style is recreated.</p><p><img src="/turtorial/hope.jpg"></p><h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h1><p><a href="https://hexo.io/themes/">https://hexo.io/themes/</a></p><p><a href="https://github.com/blinkfox/hexo-theme-matery">https://github.com/blinkfox/hexo-theme-matery</a></p><p><a href="https://www.bilibili.com/video/BV1Yb411a7ty?from=search&amp;seid=2410599160163204144">https://www.bilibili.com/video/BV1Yb411a7ty?from=search&amp;seid=2410599160163204144</a></p><p><a href="https://www.freesion.com/article/90931422289/">https://www.freesion.com/article/90931422289/</a></p><p><a href="https://juejin.cn/post/6844903636200341512">https://juejin.cn/post/6844903636200341512</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Html </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>establishment tutorial</title>
+      <link href="/2021/07/01/establishment-tutorial/"/>
+      <url>/2021/07/01/establishment-tutorial/</url>
+      
+        <content type="html"><![CDATA[<p>Hello! </p><p>This blog will exhibit the basic process of the establishment of a hexo-based personal website. Hope the following instructions can help you.</p><h1 id="Preparations"><a href="#Preparations" class="headerlink" title="Preparations:"></a>Preparations:</h1><p>(If you are a mac user, roll down to Reference to see the first video)</p><p>Before running into hexo environment, you need to download nodejs, hexo and a .md file compiler.</p><h2 id="node-js"><a href="#node-js" class="headerlink" title="node.js,"></a>node.js,</h2><p>click <a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a>, and you will see,</p><p><img src="/turtorial/nodejs.png"></p><p>Click an appropriate version (LTS is recommended) for your computer.  </p><p>PS: Some bloggers said node version should not be very high, but for me, it works well.</p><p>You are supposed to install node.js and npm within this step.</p><p>When you finished, open your cmd and type in <strong>npm -v</strong> and <strong>node -v</strong> to check your downloaded version. If successful, it shows:</p><p><img src="/turtorial/npm-v.png"></p><h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo,"></a>Hexo,</h2><p>Still in cmd, (If you wish to download in Disk D or E or … , just open cmd inside where you want)</p><p>type in the command below:</p><p><strong>npm install -g hexo</strong></p><p>When you finished, use <strong>hexo -v</strong> to check your installation. If successful, it shows:</p><p><img src="/turtorial/hexo-v.png"></p><h2 id="md-Compiler"><a href="#md-Compiler" class="headerlink" title=".md Compiler,"></a>.md Compiler,</h2><p>Here two are recommended: MarkDownPad2 and Typora</p><p>I choose typora here, because MarkDownPad2 needs secret keys.</p><p>If time is available, I will write another blog to introduce how to use typora and write html codes inside it. However, an alternative way is to read the second link in Reference to get you familiar with this excellent software.</p><h1 id="Establishment-All-command-in-cmd"><a href="#Establishment-All-command-in-cmd" class="headerlink" title="Establishment: (All command in cmd)"></a>Establishment: (All command in cmd)</h1><h2 id="Create-a-Blog"><a href="#Create-a-Blog" class="headerlink" title="Create a Blog,"></a>Create a Blog,</h2><p>Under a favorable path, type in:</p><p><strong>md blog</strong></p><p>Then, you can see a file named blog is created.</p><p><img src="/turtorial/create.png"></p><h2 id="Create-a-default-page"><a href="#Create-a-default-page" class="headerlink" title="Create a default page,"></a>Create a default page,</h2><p>Then go into blog file, type in:</p><p><strong>cd blog,</strong></p><p><strong>hexo init,</strong></p><p>After installation finished, type in:</p><p><strong>hexo s,</strong></p><p>You are expected to see a feedback below.</p><p><img src="/turtorial/hexo-s.png"></p><p>Now, you can type <strong>localhost:4000</strong> in any browser to see what is going to happen!</p><p><img src="/turtorial/default.png"></p><p>You should see a “hello world” default page created for you.</p><h2 id="Create-a-new-Blog"><a href="#Create-a-new-Blog" class="headerlink" title="Create a new Blog,"></a>Create a new Blog,</h2><p>Press <strong>Ctrl+C</strong> to exit.</p><p>type in:</p><p><strong>hexo n</strong> **”intro”**or <strong>hexo new</strong> <strong>“intro”</strong> (intro can be replaced by any name as you like)</p><p>Then, use .md compiler to write something inside your <strong>intro.md</strong> file. (vim is also okay if you are a mac user)</p><p><img src="/turtorial/sentence.png"></p><p>Save and come back to cmd.</p><p>Now, type in:</p><p><strong>hexo clean,</strong></p><p><strong>hexo g,</strong></p><p><strong>hexo s,</strong></p><p>Now, you can type <strong>localhost:4000</strong> in any browser to see what is going to happen!</p><p><img src="/turtorial/first.png"></p><p>You are expected to see a new blog is created above “hello world”.</p><h1 id="Connected-to-your-Github"><a href="#Connected-to-your-Github" class="headerlink" title="Connected to your Github"></a>Connected to your Github</h1><h2 id="Create-a-permanent-path"><a href="#Create-a-permanent-path" class="headerlink" title="Create a permanent path,"></a>Create a permanent path,</h2><p>Then, login in your github account and create a new repository.</p><p><img src="/turtorial/git.png"></p><p>Write in the form of <strong>nickname.github.io</strong></p><p><img src="/turtorial/io.png"></p><p>Press Create repository.</p><h2 id="Install-deployer"><a href="#Install-deployer" class="headerlink" title="Install deployer,"></a>Install deployer,</h2><p>Back to cmd, type in:</p><p><strong>npm install hexo-deployer-git –save</strong></p><p>Ignore all the warnings. </p><h2 id="Modify-config-yml"><a href="#Modify-config-yml" class="headerlink" title="Modify _config.yml,"></a>Modify _config.yml,</h2><p>Use .md compiler(typora) to modify _config.yml inside the blog file</p><p><img src="/turtorial/yml.png"></p><p>Add deploy information at the end of this .yml file</p><p><img src="/turtorial/gitpath.png"></p><p>Then, inside cmd, set your git global</p><p><strong>git config –global user.name</strong></p><p><strong>git config –global user.email</strong></p><p>Next, type in:</p><p><strong>hexo d,</strong></p><p>to deploy into Github. You need to login in your Github account to confirm.</p><h1 id="Check"><a href="#Check" class="headerlink" title="Check,"></a>Check,</h1><p>After deployer finishes, you can try nickname.github.io to see your website.</p><p>Please wait patiently for a few seconds.</p><p><img src="/turtorial/cloud.jpg"></p><h1 id="Congratulations"><a href="#Congratulations" class="headerlink" title="Congratulations!"></a>Congratulations!</h1><p>Now, you can see your localhost page has been uploaded into your Github website!</p><h1 id="Reference-In-same-order-of-steps"><a href="#Reference-In-same-order-of-steps" class="headerlink" title="Reference: (In same order of steps)"></a>Reference: (In same order of steps)</h1><p><a href="https://www.bilibili.com/video/BV1Yb411a7ty">https://www.bilibili.com/video/BV1Yb411a7ty</a></p><p><a href="https://blog.csdn.net/SIMBA1949/article/details/79001226">https://blog.csdn.net/SIMBA1949/article/details/79001226</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Html </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>picture test</title>
+      <link href="/2021/07/01/picture-test/"/>
+      <url>/2021/07/01/picture-test/</url>
+      
+        <content type="html"><![CDATA[<p>The correct way to import a picture is to type in the following command:</p><p><img src="/images/command.png"></p><p><img src="/images/dir.png"></p><p><img src="/images/klee.jpg"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>music test</title>
+      <link href="/2021/07/01/music-test/"/>
+      <url>/2021/07/01/music-test/</url>
+      
+        <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=623289&auto=1&height=66"></iframe>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>intro</title>
+      <link href="/2021/06/30/intro/"/>
+      <url>/2021/06/30/intro/</url>
+      
+        <content type="html"><![CDATA[<p>This is an introducing article to test what is going on my website</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> hello </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2021/06/30/hello-world/"/>
+      <url>/2021/06/30/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
